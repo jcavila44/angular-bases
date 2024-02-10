@@ -1,0 +1,11 @@
+<h1>DBZ Personales</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <dbz-list [Inputcharacters]="characters" (OutputDeletedCharacters)="EmitOnDeletedCharacter($event)"></dbz-list>
+    </div>
+    <div class="col">
+        <bdz-add-character (onNewCharacter)="onNewCharacter($event)"></bdz-add-character>
+    </div>
+</div>

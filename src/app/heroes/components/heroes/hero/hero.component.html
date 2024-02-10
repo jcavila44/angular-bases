@@ -1,0 +1,17 @@
+<h1>
+    HEROES
+</h1>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{name | titlecase}}</h5>
+        <p> <strong>Nombre:</strong> {{name}} </p>
+        <p> <strong>Edad:</strong> {{age}} </p>
+        <p> <strong>Metodo:</strong> {{getHeroDescription}} </p>
+        <p> <strong>Nombre capitalizado:</strong> {{getCapitalizedName}} </p>
+
+        <button *ngIf="name !== 'Argemiro' " (click)="changeName()" class="btn btn-primary mx-2">Cambiar nombre</button>
+        <button *ngIf="age !== 13" (click)="changeAge()" class="btn btn-primary mx-2">Cambiar edad</button>
+        <button (click)="resetForm()" class="btn btn-primary mx-2">Reset</button>
+    </div>
+</div>
